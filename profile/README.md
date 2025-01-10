@@ -4,11 +4,78 @@
 
 ---
 
+```mermaid
+graph TD
+    A[Walme.io Core Platform]
+
+    %% Blockchain and Wallets
+    A --> B[Blockchain Integrations]
+    B --> B1[Solana]
+    B --> B2[Ethereum]
+    B --> B3[Polygon]
+    B --> B4[Bitcoin]
+    B --> B5[Custodial Wallet (KYC)]
+
+    %% Wallet Features
+    A --> C[Wallet Features]
+    C --> C1[Non-Custodial Wallet]
+    C --> C2[Jupiter Swap API]
+    C --> C3[1inch Protocol]
+    C --> C4[Staking]
+    C --> C5[Wallet Analytics]
+
+    %% Secure Messaging
+    A --> D[Secure Messenger]
+    D --> D1[Matrix Protocol]
+    D --> D2[Synapse Server]
+    D --> D3[End-to-End Encryption]
+    D --> D4[Audio/Video Calls]
+
+    %% Authentication
+    A --> E[Authentication Layer]
+    E --> E1[Auth0]
+    E --> E2[Web3Auth]
+
+    %% AI and Analytics
+    A --> F[AI-Powered Analytics]
+    F --> F1[Risk Assessment]
+    F --> F2[Transaction Scoring]
+    F --> F3[Market Trends]
+
+    %% Backend Services
+    A --> G[Backend Services]
+    G --> G1[Node.js APIs]
+    G --> G2[Matrix API Extensions]
+    G --> G3[KYC/AML API (SUMSUB)]
+    G --> G4[PostgreSQL Database]
+
+    %% Frontend
+    A --> H[Frontend Clients]
+    H --> H1[iOS (Swift)]
+    H --> H2[Android (Kotlin)]
+    H --> H3[Web (React.js)]
+
+    %% DevOps and Infrastructure
+    A --> I[DevOps Infrastructure]
+    I --> I1[Docker Containers]
+    I --> I2[Kubernetes]
+    I --> I3[NGINX Proxy]
+    I --> I4[SSL Certificates]
+
+    %% Compliance
+    A --> J[Compliance and Security]
+    J --> J1[PCI DSS]
+    J --> J2[VASP Licensing]
+    J --> J3[Regulatory Integration]
+```
+
+
+
 ## 🌟 Key Features
 
 - **Multichain Wallets**: Support for Solana, Ethereum, Polygon, Bitcoin, and more.
 - **Secure Messenger**: Built on Matrix for encrypted messaging, voice, and video calls.
-- **Crypto Cards**: Fiat on/off-ramps with custodial wallets powered by **Kauri Finance** (KYC required).
+- **Crypto Cards**: Fiat on/off-ramps with custodial wallets powered by (KYC required).
 - **DeFi Tools**: Token swaps and advanced analytics via Jupiter and 1inch integrations.
 - **Authentication Made Simple**: Secure login via Auth0 and Web3Auth.
 - **AI-Powered Analytics**: Market trends, risk assessment, and portfolio insights.
