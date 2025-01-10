@@ -3,73 +3,144 @@
 **Walme** is reshaping the Web3 landscape, combining **banking, blockchain**, and **secure communication** into one seamless ecosystem. Our platform empowers users to manage assets, communicate securely, and participate in decentralized finance with ease.
 
 ---
-
 ```mermaid
-graph TD
+graph TB
+    %% Core Platform
     A[Walme.io Core Platform]
 
     %% Blockchain and Wallets
-    A --> B[Blockchain Integrations]
-    B --> B1[Solana]
-    B --> B2[Ethereum]
-    B --> B3[Polygon]
-    B --> B4[Bitcoin]
-    B --> B5[Custodial Wallet (KYC)]
+    subgraph Blockchain Integrations
+        B[Blockchain Integrations]
+        B1[Solana]
+        B2[Ethereum]
+        B3[Polygon]
+        B4[Bitcoin]
+        B5[Custodial Wallet KYC]
+        B --> B1
+        B --> B2
+        B --> B3
+        B --> B4
+        B --> B5
+    end
+    A --> B
 
     %% Wallet Features
-    A --> C[Wallet Features]
-    C --> C1[Non-Custodial Wallet]
-    C --> C2[Jupiter Swap API]
-    C --> C3[1inch Protocol]
-    C --> C4[Staking]
-    C --> C5[Wallet Analytics]
+    subgraph Wallet Features
+        C[Wallet Features]
+        C1[Non-Custodial Wallet Core]
+        C2[Jupiter Swap API]
+        C3[1inch Protocol]
+        C4[Staking]
+        C5[Wallet Analytics]
+        C --> C1
+        C --> C2
+        C --> C3
+        C --> C4
+        C --> C5
+    end
+    A --> C
 
     %% Secure Messaging
-    A --> D[Secure Messenger]
-    D --> D1[Matrix Protocol]
-    D --> D2[Synapse Server]
-    D --> D3[End-to-End Encryption]
-    D --> D4[Audio/Video Calls]
+    subgraph Secure Messaging
+        D[Secure Messaging]
+        D1[Matrix Protocol]
+        D2[Synapse Server]
+        D3[End-to-End Encryption]
+        D4[Audio and Video Calls]
+        D --> D1
+        D --> D2
+        D --> D3
+        D --> D4
+    end
+    A --> D
 
     %% Authentication
-    A --> E[Authentication Layer]
-    E --> E1[Auth0]
-    E --> E2[Web3Auth]
+    subgraph Authentication Layer
+        E[Authentication Layer]
+        E1[Auth0]
+        E2[Web3Auth]
+        E --> E1
+        E --> E2
+    end
+    A --> E
 
     %% AI and Analytics
-    A --> F[AI-Powered Analytics]
-    F --> F1[Risk Assessment]
-    F --> F2[Transaction Scoring]
-    F --> F3[Market Trends]
+    subgraph AI Analytics
+        F[AI-Powered Analytics]
+        F1[Risk Assessment]
+        F2[Transaction Scoring]
+        F3[Market Trends]
+        F --> F1
+        F --> F2
+        F --> F3
+    end
+    A --> F
 
     %% Backend Services
-    A --> G[Backend Services]
-    G --> G1[Node.js APIs]
-    G --> G2[Matrix API Extensions]
-    G --> G3[KYC/AML API (SUMSUB)]
-    G --> G4[PostgreSQL Database]
+    subgraph Backend Services
+        G[Backend Services]
+        G1[Node.js APIs]
+        G2[Matrix API Extensions]
+        G3[KYC AML API SUMSUB]
+        G4[PostgreSQL Database]
+        G --> G1
+        G --> G2
+        G --> G3
+        G --> G4
+    end
+    A --> G
 
     %% Frontend
-    A --> H[Frontend Clients]
-    H --> H1[iOS (Swift)]
-    H --> H2[Android (Kotlin)]
-    H --> H3[Web (React.js)]
+    subgraph Frontend Clients
+        H[Frontend Clients]
+        H1[iOS Swift]
+        H2[Android Kotlin]
+        H3[Web React.js]
+        H --> H1
+        H --> H2
+        H --> H3
+    end
+    A --> H
 
     %% DevOps and Infrastructure
-    A --> I[DevOps Infrastructure]
-    I --> I1[Docker Containers]
-    I --> I2[Kubernetes]
-    I --> I3[NGINX Proxy]
-    I --> I4[SSL Certificates]
+    subgraph DevOps Infrastructure
+        I[DevOps Infrastructure]
+        I1[Docker Containers]
+        I2[Kubernetes]
+        I3[NGINX Proxy]
+        I4[SSL Certificates]
+        I --> I1
+        I --> I2
+        I --> I3
+        I --> I4
+    end
+    A --> I
 
-    %% Compliance
-    A --> J[Compliance and Security]
-    J --> J1[PCI DSS]
-    J --> J2[VASP Licensing]
-    J --> J3[Regulatory Integration]
+    %% Compliance and Security
+    subgraph Compliance and Security
+        J[Compliance and Security]
+        J1[PCI DSS]
+        J2[VASP Licensing]
+        J3[Regulatory Integration]
+        J --> J1
+        J --> J2
+        J --> J3
+    end
+    A --> J
+
+    %% Additional Integrations
+    subgraph Additional Integrations
+        K[Additional Integrations]
+        K1[Binance API]
+        K2[Wallet Addressing]
+        K3[AI Bots]
+        K --> K1
+        K --> K2
+        K --> K3
+    end
+    A --> K
+
 ```
-
-
 
 ## 🌟 Key Features
 
